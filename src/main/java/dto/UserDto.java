@@ -6,7 +6,6 @@ public class UserDto {
     private String name;
     private String password;
     private String cratedAt;
-
     public Integer getId() {
         return id;
     }
@@ -55,4 +54,11 @@ public class UserDto {
         this.password = password;
         this.cratedAt = cratedAt;
     }
+    public UserDto(Integer id, String username, String name, String cratedAt) {
+        this.id = id;
+        this.username = username;
+        this.name = name;
+        this.cratedAt = cratedAt;
+    }
+
 }

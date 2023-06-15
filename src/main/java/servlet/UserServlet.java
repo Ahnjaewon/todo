@@ -24,7 +24,7 @@ public class UserServlet extends HttpServlet {
         System.out.println(username);
         System.out.println(password);
         System.out.println(name);
-        UserDto user = new UserDto(null,username,password,name,null);
+        UserDto user = new UserDto(null,username,name,password,null);
         UserDao userDao = new UserDao();
         userDao.insert(user);
         resp.setStatus(201);
